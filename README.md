@@ -48,5 +48,18 @@ if __name__ =='__main__':
 7. To include CSS and JavaScript - Create a 'static' folder and inside that place CSS and JavaScript files.
     - Include the css and js in HTML head tag as     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/css.css') }}">
   
-8. 
+8. Sessions: session['response']='session#1'   ----  if 'response' in session:   s = session['response'];  
+  
+9. Request Data: Form, args, Cookies, files, method
+  
+10. redirects() and Errors: redirect() function - it returns a response object and redirects the user to another target location
+  
+  @app.route('/login',methods = ['POST', 'GET']) 
+def login(): 
+   if request.method == 'POST' and request.form['username'] == 'admin' :
+      return redirect(url_for('success'))
+   else:
+      return redirect(url_for('index'))
+  
+11. 
   
