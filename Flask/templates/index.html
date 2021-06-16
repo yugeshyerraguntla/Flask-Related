@@ -1,0 +1,28 @@
+<html>
+   
+        
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/css.css') }}">
+        
+    
+
+<body>
+    <h2> Welcome to Marks Calc</h2>
+
+    <form action="/submit" method="POST">
+        <label for='Science'>Science:</label><br>
+        <input type="text" id="science" name="science" value="0"><br><br>
+        <label for='Maths'>Maths:</label><br>
+        <input type="text" id="maths" name="maths" value="0"><br><br>
+        <label for='English'>Science:</label><br>
+        <input type="text" id="english" name="english" value="0"><br><br>
+        <label for='Social'>Social:</label><br>
+        <input type="text" id="social" name="social" value="0"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+</body>
+
+
+</html>
